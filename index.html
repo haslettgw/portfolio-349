@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of Gwen Haslett, a computer science student at Michigan State University.">
+    <link rel="stylesheet" href="style.css">
     <title>Gwen Haslett</title>
 </head>
 <body>
     <header>
-        <img src="IMG_9234.png" width= 150 alt="Picture of Gwen">
-        <p>^ Gwen Haslett :)</p>
-        <nav>
+        <img src="IMG_9234.png" width= 150 alt="Picture of Gwen" class = "profile-picture">
+        <p class="custom-paragraph">^ Gwen Haslett :)</p>
+        <nav id="menu" class="wayfinder">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -32,21 +33,24 @@
             <h2>Projects</h2>
             <article>
                 <h3>Spartan Touchdown</h3>
-                <p>A 2D platformer style game coded in c++</p>
+                <img src="spartan-touchdown.png" width=300 alt="Screenshot of Spartan Touchdown">
+                <p class="project-body">A 2D platformer style game coded in c++</p>
             </article>
             <article>
                 <h3>Social Media Platform</h3>
-                <p>A social media style program constructed through python and SQL databases.</p>
+                <img src="social-media-diagram.png" width = 300 alt="Diagram for a database in the social media program">
+                <p class="project-body">A social media style program constructed through python and SQL databases.</p>
             </article>
         </section>
         <section id="skills">
             <h2>Skills</h2>
-            <p>I am proficient in C++, Python, and SQL, and am currently learning HTML and eventually CSS.</p>
+            <p>I am proficient in C++, Python, and SQL, and am currently learning HTML and CSS.</p>
         </section>
         <section id="contact">
             <h2>Contact</h2>
             <address>
                 <p>Please don't</p>
+                <p>(but if you insist, you can reach me via carrier pigeon)</p>
             </address>
         </section>
     </main>

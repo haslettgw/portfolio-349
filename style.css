@@ -1,8 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet');
+
+.coiny-regular {
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.comfortaa-regular {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
+    /* original color pallette: */
     /* https://coolors.co/7ddf64-ffffff-ffcad4-f4acb7-7c6354 */
-    --primary-background: #ffffff;
-    --primary-text: #F4ACB7;
-    --secondary-text: #7C6354;
-    --secondary: #7DDF64;
-    --highlight: #FFCAD4;
+
+    /* color pallette after revisions: */
+    /* https://coolors.co/c7f1bb-ffffff-ffd6de-f4acb7-bda99e */
+    --primary-background: #AC9386;
+    --primary-text: #F193A1;
+    --secondary-text: #FFFFFF;
+    --secondary: #C7F1BB;
+    --highlight: #FFD6DE;
+}
+
+body {
+    background: var(--highlight);
+    color: var(--primary-background);
+    font-family: 'Comfortaa';
+}
+
+.custom-paragraph {
+    font-family: 'Comfortaa';
+    color: var(--primary-background);
+    text-align: center;
+}
+
+header{
+    color: var(--primary-text);
+    text-align: center;
+}
+
+h1 {
+    color: var(--primary-text);
+    font-family: 'Coiny';
+    text-shadow: 
+    -1px -1px 0 #FFF,  
+     1px -1px 0 #FFF,
+    -1px  1px 0 #FFF,
+     1px  1px 0 #FFF;
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Coiny';
+    color: var(--primary-text);
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Coiny';
+    color: var(--primary-text);
+    font-size: 1.25em;
+    text-align: center;
+}
+
+p {
+    font-family: 'Comfortaa';
+    color: var(--primary-background);
+}
+
+#projects article {
+    background: var(--secondary);
+    margin: 40px;
+    border-radius: 8px;
+    padding: 10px;
+    color: var(--primary-text);
+    outline: 3px solid var(--primary-text);
+    text-align: center;
+    max-width: 750px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 40px; 
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--primary-text);
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; 
+    padding: 10px;
+}
+.profile-picture:hover {
+    transform: scale(1.1);
+}
+
+#menu {
+    background: var(--secondary);
+    margin-top: 1rem;
+}
+
+#menu ul {
+    list-style-type: none;
+    
+}
+
+#menu ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    font-size: 1.8em;
+    padding: 1rem 2rem;
+    display: inline-block;
+}
+
+#menu ul li a:visited {
+    color: var(--primary-text);
+}
+
+#menu ul li a:hover {
+    background: color-mix(in oklab, var(--secondary), black 10%);
+    color: var(--secondary-text);
+}
+
+a:link {
+    color: var(--primary-text);
+}
+
+a:visited {
+    color: var(--highlight);
+}
+
+a:hover {
+    color: var(--secondary-text);
+}
+
+a:active {
+    color: var(--primary-background);
+}
+img {
+    border: 3px solid var(--primary-text);
+    border-radius: 8px;
+}
+img:hover{
+    transform: scale(1.7);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-body {
+    color: var(--primary-text);
+}
+
+footer {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.8em;
 }
