@@ -132,7 +132,7 @@ p {
 }
 
 #menu ul li a:visited {
-    color: var(--primary-text);
+    color: var(--primary-text2);
 }
 
 #menu ul li a:hover {
