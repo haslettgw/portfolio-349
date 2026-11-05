@@ -19,12 +19,12 @@
 
     /* color pallette after revisions: */
     /* https://coolors.co/c7f1bb-ffffff-ffd6de-f4acb7-bda99e */
-    --primary-background: white;
+    --primary-background: #AC9386;
     --primary-text2: #5B433E;
-    --primary-text: #F4ACB7;
+    --primary-text: #F193A1;
     --secondary-text: #FFFFFF;
     --secondary: #C7F1BB;
-    --highlight: #866A5B;
+    --highlight: #FFD6DE;
 }
 
 body {
@@ -110,7 +110,10 @@ p {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
     gap: 4.5rem;
+    padding-left: 0;
+    margin: 0;
 }
 
 #menu ul li {
