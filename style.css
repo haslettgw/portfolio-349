@@ -20,6 +20,7 @@
     /* color pallette after revisions: */
     /* https://coolors.co/c7f1bb-ffffff-ffd6de-f4acb7-bda99e */
     --primary-background: #AC9386;
+    --primary-text2: #5B433E;
     --primary-text: #F193A1;
     --secondary-text: #FFFFFF;
     --secondary: #C7F1BB;
@@ -140,7 +141,7 @@ p {
 }
 
 a:link {
-    color: var(--primary-text);
+    color: var(--primary-text2);
 }
 
 a:visited {
