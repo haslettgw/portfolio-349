@@ -19,12 +19,12 @@
 
     /* color pallette after revisions: */
     /* https://coolors.co/c7f1bb-ffffff-ffd6de-f4acb7-bda99e */
-    --primary-background: #AC9386;
+    --primary-background: white;
     --primary-text2: #5B433E;
-    --primary-text: #F193A1;
+    --primary-text: #F4ACB7;
     --secondary-text: #FFFFFF;
     --secondary: #C7F1BB;
-    --highlight: #FFD6DE;
+    --highlight: #866A5B;
 }
 
 body {
