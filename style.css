@@ -170,7 +170,7 @@ a:active {
     transition: transform 0.3s ease-in-out;
 }
 .project-body {
-    color: var(--primary-text);
+    color: var(--primary-text2);
 }
 
 footer {
