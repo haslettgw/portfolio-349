@@ -145,7 +145,7 @@ a:link {
 }
 
 a:visited {
-    color: var(--highlight);
+    color: var(--primary-text2);
 }
 
 a:hover {
