@@ -19,12 +19,18 @@
 
     /* color pallette after revisions: */
     /* https://coolors.co/c7f1bb-ffffff-ffd6de-f4acb7-bda99e */
-    --primary-background: #AC9386;
+    /*--primary-background: #AC9386;
     --primary-text2: #5B433E;
     --primary-text: #F193A1;
     --secondary-text: #FFFFFF;
     --secondary: #C7F1BB;
-    --highlight: #FFD6DE;
+    --highlight: #FFD6DE; */
+    --primary-background: #5C463C;  
+    --primary-text2: #3A2320;      
+    --primary-text: #A23E50; 
+    --secondary-text: #FFFFFF; 
+    --secondary: #A9D19E;   
+    --highlight: #F1C2CB;   
 }
 
 body {
@@ -78,7 +84,7 @@ p {
 #projects article {
     background: var(--secondary);
     border-radius: 8px;
-    color: var(--primary-text);
+    color: var(--primary-text2);
     outline: 3px solid var(--primary-text);
     text-align: center;
     padding: 40px;
