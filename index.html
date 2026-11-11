@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of Gwen Haslett, a computer science student at Michigan State University.">
-    <link rel="stylesheet" href="style.css">
     <title>Gwen Haslett</title>
+
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="glide.min.js" defer></script>
+    <script src="script.js" defer></script>
+
 </head>
 <body>
+    <button id="theme-toggle" class="theme-button" aria-label="Toggle theme">
+        <span id="theme-text">Dark Mode</span>
+    </button>
     <header>
         <img src="IMG_9234.png" width= 150 alt="Picture of Gwen" class = "profile-picture">
         <p class="custom-paragraph">^ Gwen Haslett :)</p>
@@ -34,17 +44,39 @@
 
         <section id="projects">
             <h2>Projects</h2>
-            <article>
-                <h3>Spartan Touchdown</h3>
-                <img src="spartan-touchdown.png" width=300 alt="Screenshot of Spartan Touchdown" class="project-image">
-                <p class="project-body">A 2D platformer style game coded in c++</p>
-            </article>
-            <article>
-                <h3>Social Media Platform</h3>
-                <img src="social-media-diagram.png" width = 300 alt="Diagram for a database in the social media program" class="project-image">
-                <p class="project-body">A social media style program constructed through python and SQL databases.</p>
-            </article>
+
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <article>
+                                <h3>Spartan Touchdown</h3>
+                                <img src="spartan-touchdown.png" width="300" alt="Screenshot of Spartan Touchdown" class="project-image">
+                                <p class="project-body">A 2D platformer style game coded in c++</p>
+                            </article>
+                        </li>
+                        <li class="glide__slide">
+                            <article>
+                                <h3>Social Media Platform</h3>
+                                <img src="social-media-diagram.png" width="300" alt="Diagram for a database in the social media program" class="project-image">
+                                <p class="project-body">A social media style program constructed through python and SQL databases.</p>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<" aria-label="Previous project">◀</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">" aria-label="Next project">▶</button>
+                </div>
+
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0" aria-label="Go to project 1"></button>
+                    <button class="glide__bullet" data-glide-dir="=1" aria-label="Go to project 2"></button>
+                </div>
+            </div>
         </section>
+
 
         <section id="skills">
             <h2>Skills</h2>

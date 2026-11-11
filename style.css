@@ -31,6 +31,63 @@
     --secondary-text: #FFFFFF; 
     --secondary: #A9D19E;   
     --highlight: #F1C2CB;   
+
+    --card-bg: #F1C2CB;
+    --border-color: #3A2320;
+
+    --btn-bg: #F1C2CB;
+    --btn-text: #3A2320;
+    --btn-hover: #A9D19E;
+    --btn-border: #A23E50;
+}
+
+body.dark-mode {
+    --primary-background: #F1C2CB; 
+    --primary-text2: #F8F4F2;     
+    --primary-text: #F4ACB7;      
+    --secondary-text: #231614;   
+    --secondary: #3A2320;      
+    --highlight: #231614;     
+    --h1-outline: #3A2320;   
+
+    --btn-bg: #F1C2CB;
+    --btn-text: #3A2320;
+    --btn-border: #A9D19E;
+    --btn-hover: #A9D19E;
+}
+
+body, #menu, #projects article, .theme-btn {
+    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.theme-button {
+    position: fixed;
+    top: 1.25rem;
+    left: 1.25rem;
+    z-index: 1000;
+
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: 3px solid var(--btn-border);
+    border-radius: 10px;
+    padding: 0.55rem 1rem;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.theme-button:hover {
+    background-color: var(--btn-hover);
+    color: var(--secondary-text);
+}
+
+.theme-button:active {
+    transform: scale(0.97);
 }
 
 body {
@@ -49,6 +106,85 @@ header{
     color: var(--primary-text);
     text-align: center;
 }
+
+body.dark-mode h1 {
+    text-shadow: none;
+}
+
+.glide {
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 55px; 
+    box-sizing: border-box;
+}
+
+.glide__track {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.glide__slides {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.glide__slide {
+    width: 100%;
+    flex-shrink: 0;
+    padding: 6px; 
+    box-sizing: border-box;
+}
+
+#projects article {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.glide__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: 2px solid var(--btn-border);
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.glide__arrow--left {
+    left: 4px;
+}
+
+.glide__arrow--right {
+    right: 4px;
+}
+
+/* Position the navigation dots neatly below the card */
+.glide__bullets {
+    position: static;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+
 
 h1 {
     color: var(--primary-text);
@@ -180,26 +316,18 @@ footer {
 }
 
 #projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    max-width: 1200px;
+    display: block;
+    max-width: 900px;
     margin: 40px auto;
     padding: 0 20px;
     box-sizing: border-box;
 }
 
-#projects h2{
-    grid-column: 1 / -1;
+#projects h2 {
     margin-bottom: 20px;
     text-align: center;
 }
 
-@media (max-width: 768px) {
-    #projects {
-        grid-template-columns: 1fr;
-    }
-}
 
 #projects img {
     max-width: 100%;
@@ -251,10 +379,6 @@ footer {
 @media (min-width: 48rem) {
     #menu ul {
         gap: 4.5rem;
-    }
-    #projects {
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
     }
     #link-contact {
         gap: 50px;
